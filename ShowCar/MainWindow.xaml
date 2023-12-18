@@ -1,0 +1,54 @@
+﻿<Window x:Class="ShowCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShowCar"
+        mc:Ignorable="d"
+        Title="Автосалон" Height="450" Width="800">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="400"/>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100">
+
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Grid.RowSpan="1" Grid.Row="0">
+            <Button Content="Покупатели" Foreground="White" Background="Red"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Vertical" Grid.RowSpan="2" Grid.Row="1">
+            <Button Content="Марки"  Background="Red" Foreground="White"/>
+            <Button Content="Сотрудники" Background="Red" Foreground="White"/>
+            <Button Content="Автомобили"   Background="Red" Foreground="White"/>
+            <Button Content="Продажи"  Background="Red" Foreground="White"/>
+        </StackPanel>
+  
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBlock Text="Автосалон" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock>
+             <TextBox Width="200" Height="20"/>
+            <Button Content="Поиск" Background="Red" Foreground="White">
+            </Button> 
+                <Button Content="Добавить" Background="Red" Foreground="White">
+                    </Button>
+            </TextBlock>
+        </StackPanel>
+        <Image Source="C:\Users\pavel\source\repos\ShowCar\ShowCar\image.jpg.jpg" Margin="-5,-12,5,12"/>
+        <Frame x:Name="Frame" Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</Window>
